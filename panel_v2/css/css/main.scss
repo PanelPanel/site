@@ -1,0 +1,238 @@
+// Import Order
+@import "includes/reset";
+@import "includes/breakpoints";
+@import "includes/animation";
+@import "includes/utilities";
+@import "includes/whitespace";
+@import "includes/grid";
+@import "includes/sidebar";
+@import "includes/sizing";
+@import "includes/colors";
+@import "includes/positioning";
+@import "includes/depth";
+@import "includes/typography";
+@import "includes/tables";
+@import "includes/images";
+@import "includes/borders";
+@import "includes/forms";
+@import "includes/buttons";
+
+//AIMEE COLOR: rgba(255, 235, 80, 1);
+//DANIEL COLOR: #4a56f0;
+
+$main-color: #4a56f0;
+
+.white {color:white;}
+
+a {color:black;}
+a:hover {color:white;}
+
+.body {
+margin-top: 60vh;
+box-shadow: 0 34px 34px 37px rgba(1, 1, 1,0.25);
+
+//background-color:rgba(255, 235, 80, 1); Aimee
+background-color: $main-color;
+
+@include small {
+    margin-top: 68vh;
+  }
+
+}
+
+
+
+
+#identity {
+	display:block; 
+	width: 100%;
+	height: auto;
+	}
+
+.larger {
+		font-size: 30px;
+}
+
+    
+    
+
+    
+    .caption {
+		font-size: 10px;
+		font-weight: normal;
+		line-height: 13px;
+		text-transform: uppercase;
+		text-align:right;
+		width: 100%;
+    
+    }
+    
+    .cover-img {position:relative;}
+    
+    h1,h2,h3,h4,h5,h6 {font-weight:normal; text-transform: uppercase;}
+    
+    
+.event {
+
+min-height: 100vh;
+
+//Account for sidebar nav
+padding-left: 10vw;
+
+@include small {
+   padding-left: 0;
+  }
+
+background-attachment: fixed;
+
+}
+
+.event img,
+.event p,
+.event h1,
+.event h2,
+.event h3,
+.event h4,
+.event h5,
+.event h6,
+.event div
+{
+z-index:999;	
+	
+}
+ 
+.event h6 {margin-bottom: 0.25rem;}    
+
+#event1 {
+	background: linear-gradient(rgba(199, 161, 219, 1), rgba(255, 235, 80, 1) 68.07%);
+	background-attachment: fixed;
+	}
+
+#event2 {
+	background-color: $main-color;
+	background-attachment: fixed;
+	}
+
+.stuck {
+  position:fixed;
+  top:0;
+  z-index: 99;
+  
+  @include small {
+    position:relative;
+  }
+  
+}
+				
+
+ .blink {
+  animation: blinker 1s cubic-bezier(1.0,0,0,1.0) infinite;
+}
+
+@keyframes blinker {  
+  0% { opacity: 0; }
+  100% {opacity: 1;}
+}
+
+
+@media only screen and (max-device-width: 480px) {
+
+
+	}
+
+// INTRO SCROLL	
+	
+.intro {
+		font-family: "Times New Roman";
+		letter-spacing: 1px;
+		background-color: #fff;
+		position:absolute;
+		width: 100vw;
+		height: 50vh;
+		top: 0;
+		z-index:-9999;
+		
+	}
+	
+	.intro a {text-decoration:none;}
+
+
+div#intro-scroll {
+		position:absolute;
+	    -webkit-animation-name: move;
+    	-webkit-animation-duration: 50s;
+    	-webkit-animation-iteration-count: infinite;
+    	-webkit-animation-timing-function: linear;
+	}
+
+div#intro-scroll2 {
+		position:absolute;
+	    -webkit-animation-name: move;
+    	-webkit-animation-duration: 30s;
+    	-webkit-animation-iteration-count: infinite;
+    	-webkit-animation-timing-function: linear;
+	}
+	
+.intro img {
+
+display:block;
+margin: 0 auto;
+padding: 30px 0px;
+width: 60%;
+
+}	
+
+
+// POP UP WINDOW CSS
+
+.popup {
+  position: relative;
+  background: $main-color;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+//POP UP OVERLAY STYLING
+.mfp-bg {
+background: white;
+opacity: .8;
+}
+
+div#intro-scroll3 {
+		position:absolute;
+	    -webkit-animation-name: move;
+    	-webkit-animation-duration: 100s;
+    	-webkit-animation-iteration-count: infinite;
+    	-webkit-animation-timing-function: linear;
+	}
+
+    
+    #intro-scroll:hover, #intro-scroll2:hover, #intro-scroll3:hover {
+    	-webkit-animation-play-state: paused;
+    }
+    
+    @-webkit-keyframes move {
+    	0% {
+    		margin-top: 60vh;
+    	}
+    	100% {
+    		margin-top: -300vh;
+    	}
+    }	
+	
+	div.type-text {
+		
+		font-size: 25px;
+		font-family: 'Arial Narrow','AvenirNextCondensed-Medium', serif; 
+		letter-spacing: 1px;
+		@include large {
+			font-size: 40px;
+		}
+		@include small {
+			font-size: 18px;
+		}
+		
+		}
+	

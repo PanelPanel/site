@@ -1,0 +1,40 @@
+Bgcolor: 
+
+----
+
+Type: screening
+
+----
+
+Title: Apple Pie
+
+----
+
+Showtitle: true
+
+----
+
+Participants: 
+
+- 
+  name: Sam Hamilton
+
+----
+
+Opendate: 2017-04-28 20:00:00
+
+----
+
+Coverimage: 
+
+----
+
+Description: 
+
+----
+
+Bio: 
+
+----
+
+Description2: 

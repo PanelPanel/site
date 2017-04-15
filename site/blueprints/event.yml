@@ -1,0 +1,70 @@
+title: Event
+
+files:
+  sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: textarea
+
+pages: false
+
+fields:
+
+  bgcolor:
+    label: Color
+    type:  color
+    width: 1/4 
+
+  type:
+    label: Type
+    type: select
+    default: performance
+    options:
+      performance: Performance
+      screening: Screening
+
+  title:
+    label: Title
+    type:  text
+    width: 2/3
+  
+  showTitle:
+    label: 'Show Title?'
+    type: toggle
+    text: yes/no
+    width: 1/3 
+
+  participants:
+    label: Participant(s)
+    type: structure
+    limit: 5
+    fields: 
+      name: 
+        label: Name
+        type: text
+
+  openDate:
+    label: 'Open Date'
+    type:  datetime
+    width: 2/4
+
+  coverImage:
+    label: Cover Image
+    type: image
+    width: 2/4
+	
+  description:
+    label: Description
+    type:  textarea
+    width: 2/4
+
+  bio:
+    label: Biography
+    type:  textarea
+    width: 2/4
+    
+  description2:
+    label: 'Description 2nd Column'
+    type:  textarea
+    width: 2/4    

@@ -1,0 +1,71 @@
+title: Exhibition
+
+files:
+  sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: textarea
+
+pages: false
+
+fields:
+
+  bgcolor:
+    label: Color
+    type:  color
+    width: 1/4
+
+  artists:
+    label: Artist(s)
+    type:  text
+
+  title:
+    label: Title
+    type:  text
+
+  start_date:
+    label: 'Start Date'
+    type:  date
+    format: LL
+    placeholder: 'Select a date…'
+    default: today
+    width: 1/3
+
+  end_date:
+    label: 'End Date'
+    type:  date
+    format: LL
+    placeholder: 'Select a date…'
+    default: today
+    width: 1/3
+
+  open_date:
+    label: 'Open Date'
+    type:  datetime
+    width: 1/3
+
+  cover_image:
+    label: Cover Image
+    type: image
+	
+  description:
+    label: Description
+    type:  textarea
+    width: 2/4
+
+  bio:
+    label: Biography
+    type:  textarea
+    width: 2/4
+    
+  description2:
+    label: 'Description 2nd Column'
+    type:  textarea
+    width: 2/4
+
+  documentation:
+    label: Documentation
+    type: gallery
+    aspectRatio: 1:1
+    displayFilename: false  

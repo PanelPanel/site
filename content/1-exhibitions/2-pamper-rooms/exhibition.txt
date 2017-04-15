@@ -1,0 +1,45 @@
+Artists: Daniel Long & <br>Alexandra Eastburn
+
+----
+
+Title: Pamper Rooms
+
+----
+
+Start-date: 2017-04-14
+
+----
+
+End-date: 2017-05-21
+
+----
+
+Open-date: 2017-04-13 19:00:00
+
+----
+
+Cover-image: daniellong.jpg
+
+----
+
+Description: Pamper Rooms will show new paintings and sculpture from Daniel Long and Alexandra Eastburn. Living and working together on site for six weeks, the two artists have created a series of environments within the gallery. A snake through the walls, alters and stalls. Pamper, a line of sight, co-ocurring horizons move down the hall.
+
+----
+
+Bio: 
+
+Daniel Long received his MFA from the Visual Studies Program at Pacific Northwest College of Art in 2013. His work has been exhibited at Artist Curated Projects, Los Angeles, CA; Portland Museum of Modern Art, Portland, OR; ALL RISE, Seattle, WA; Portland Disjecta Contemporary Art Center, Portland, OR; Powerhouse Memphis, Memphis, TN; and The Outside Museum curated by Thousand Points of Light and PMoMA in Joshua Tree, CA. Born in Memphis, TN, Long currently lives and works in Portland, OR. 
+
+Alexandra Eastburn (b. in 1987) lives and works in Memphis, TN. She received her BFA at Memphis College of Art with an emphasis in drawing. Her works have been exhibited at the Garrison Art Center in NY, 166 Mott St, NY, NY, Glitch Gallery, Memphis, TN; and was selected to be a resident at Holy Underground in Baltimore, MD. She is currently the synth player for the band NOTS.
+
+----
+
+Description2: 
+
+----
+
+Bgcolor: #ed3523
+
+----
+
+Documentation: 
