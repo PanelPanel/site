@@ -1,23 +1,17 @@
-<!doctype html>
-<html lang="<?= site()->language() ? site()->language()->code() : 'en' ?>">
-<head>
+<?php
+//get identity images
+$myimage = new Asset('p/panel.png');
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+//get first color of first exhibition
+$getColor = page('exhibitions')->children()->visible()->sortBy('sort', 'desc')->first()->bgcolor();
 
-  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
-  <meta name="description" content="<?= $site->description()->html() ?>">
+?>
 
-  <?= css('assets/css/index.css') ?>
-
-</head>
-<body>
-
-  <header class="header wrap wide" role="banner">
+  <header class="header-main" style="background-color:<?php echo $getColor; ?>;" role="banner">
     <div class="grid">
 
       <div class="branding column">
-        <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a>
+        <a href="<?= url() ?>" rel="home"><?php echo thumb($myimage, array('width' => 600)); ?></a>
       </div>
 
       <?php snippet('menu') ?>

@@ -1,6 +1,8 @@
 <?php
 
-$projects = page('projects')->children()->visible();
+if(!isset($pageen)) $pageen = 'exhibitions';
+
+$projects = page($pageen)->children()->visible();
 
 /*
 

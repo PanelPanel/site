@@ -1,11 +1,23 @@
 title: Site
 
-pages: default
-
 fields:
   title:
     label: Title
     type:  text
+
+  open_days:
+    label: Days
+    type:  text
+    width: 1/4	
+
+  open_hours:
+    label: Hours
+    type:  text
+    width: 1/4
+
+  address:
+    label: Address
+    type:  textarea
 
   author:
     label: Author
@@ -18,3 +30,4 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+

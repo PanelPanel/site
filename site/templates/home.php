@@ -1,29 +1,28 @@
-<?php snippet('header') ?>
+<?php snippet('head') ?>
 
   <main class="main" role="main">
-    
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
-      <div class="intro text">
-        <?= $page->intro()->kirbytext() ?>
-      </div>
-      <hr />
-    </header>
-
-    <div class="text wrap">
-      <?= $page->text()->kirbytext() ?>
-    </div>
+<div class="row">
   
-    <section class="projects-section">
+  <section id="about" class="hide">    
+     <?php snippet('_about') ?> 	      
+  </section>
+
+  <section id="contact" class="hide">    
+     <?php snippet('_contact') ?> 	      
+  </section>
+
+  <section id="events" class="hide">    
+     <?php snippet('_events') ?> 	      
+  </section>
       
-      <div class="wrap wide">
-        <h2>Latest Projects</h2>
-        <?php snippet('showcase', ['limit' => 3]) ?>
-        <p class="projects-section-more"><a href="<?= page('projects')->url() ?>" class="btn">show all projects &hellip;</a></p>
-      </div>
-      
-    </section>
+  <section id="exhibitions" class="exhibitions column">
+      <?php snippet('header') ?>
+      <?php snippet('_exhibitions') ?>
+      	      
+   </section>
+</div>	
+
 
   </main>
-
+  
 <?php snippet('footer') ?>

@@ -4,15 +4,14 @@
       <p class="footer-copyright"><?php
         // Parse Kirbytext to support dynamic year,
         // but remove all HTML like paragraph tags:
-        echo html::decode($site->copyright()->kirbytext())
+        //echo html::decode($site->copyright()->kirbytext())
       ?></p>
 
-      <p class="footer-madewithkirby">
-        <a href="http://getkirby.com/made-with-kirby-and-love">Made with Kirby and <b class="heart">♥</b></a>
-      </p>
     
     </div>
   </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<?= js('assets/js/simpleLightbox.js') ?>
+<?= js('assets/js/main.js') ?>
 </body>
 </html>

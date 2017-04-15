@@ -1,13 +1,32 @@
-Title: Kirby Starterkit
+Title: Panel LA
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Panel
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: 
+
+PANEL is a space for contemporary art in Los Angeles California that hosts a residency, exhibitions and events with an emphasis on newly commissioned work and a desire to serve artists and their community. PANEL is engaged in an experiment that incorporates the studio process more directly into the event of the exhibition. We provide artists with a month long residency in the gallery prior to the exhibition and access to an onsite production shop as well as support from our curator, technician and designer. The hope is to find institutional models that support an artist’s practice holistically, and to bring process and practice into the instance of display that exhibition tends to privilege.
+
+Panel is organized by Armbay Zakaria, Chiara Giovando, Neil Doshi
 
 ----
 
-Copyright: © 2009–(date: Year) (link: http://getkirby.com text: The Kirby Team)
+Copyright: © 2009–(date: Year)
+
+----
+
+Open-days: Th–Sat
+
+----
+
+Open-hours: 12–5PM
+
+----
+
+Address: 
+
+1914 Raymond Ave.
+Los Angeles, CA 90007

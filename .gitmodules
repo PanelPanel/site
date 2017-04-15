@@ -1,0 +1,6 @@
+[submodule "site/fields/gallery"]
+	path = site/fields/gallery
+	url = https://github.com/TimOetting/kirby-gallery.git
+[submodule "site/plugins/autogit"]
+	path = site/plugins/autogit
+	url = https://github.com/pedroborges/kirby-autogit.git

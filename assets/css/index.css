@@ -82,21 +82,28 @@
 /* Vesper Libre */
 @font-face {
   font-family: 'Vesper Libre';
-  src: url(../fonts/vesperlibre-400.woff) format("woff");
+  src: url(../fonts/plane/plane.woff2) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Vesper Libre';
-  src: url(../fonts/vesperlibre-500.woff) format("woff");
+  src: url(../fonts/plane/plane.woff2) format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Vesper Libre';
-  src: url(../fonts/vesperlibre-700.woff) format("woff");
+  src: url(../fonts/plane/plane.woff2) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plane';
+  src: url(../fonts/plane/plane.woff2) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -134,27 +141,42 @@ p, ul, ol, figure, pre {
   /* Reset font-sizes and normalize margins */
   font-size: inherit;
   line-height: inherit;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.25rem;
 }
 
 /* Headings */
-h1, h2, h3 {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Plane, Helvetica, Arial, sans-serif;
 }
 
 h1 {
-  font-weight: 700;
   font-size: 2.5rem;
-  line-height: 1.25;
-  text-align: center;
-  margin-bottom: 3rem;
+  line-height: 1;
 }
+
+h1.title {
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-size: 2.4rem;
+  word-spacing: -4px;
+}
+
 
 h2 {
   font-size: 1.75rem;
   line-height: 2.2rem;
   text-align: center;
+}
+
+.dates {
+display: table;
+margin: 0 auto;
+margin-bottom: 1rem;
+
+}
+
+.dates h2 {
+	display: inline;
 }
 
 h3 {
@@ -164,6 +186,13 @@ h3 {
 
 h4 {
   font-size: 1em;
+}
+
+/* Sub head for categories and notes */
+h6 {
+  text-transform: uppercase;
+  margin-bottom: -8px;
+  margin-top: 0.5rem;
 }
 
 /* Links */
@@ -234,7 +263,7 @@ mark {
 
 img {
   border-style: none;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
