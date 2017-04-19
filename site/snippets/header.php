@@ -2,7 +2,7 @@
 //get identity images
 $myimage = new Asset('p/panel.png');
 
-//get first color of first exhibition
+//get first color of first visible exhibition
 $getColor = page('exhibitions')->children()->visible()->sortBy('sort', 'desc')->first()->bgcolor();
 
 ?>
