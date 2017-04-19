@@ -3,7 +3,7 @@ title: Exhibitions
 files: false
 
 pages:
-  template: project
+  template: exhibition
 
 options: 
   template: false  

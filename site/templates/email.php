@@ -1,10 +1,13 @@
 <?php
-	$startDate = strtotime($show->start_date());
-	$endDate = strtotime($show->end_date());
-	$openDate = strtotime($show->open_date()); 
+	$thisPage = $page->parent();
+	
+	$startDate = strtotime($thisPage->start_date());
+	$endDate = strtotime($thisPage->end_date());
+	$openDate = strtotime($thisPage->open_date()); 
 	
 	//get identity images
 	$myimage = new Asset('p/panel.png');
+	
 ?>
 
 
@@ -38,7 +41,7 @@
 	
 	table.social {
 /* 	padding:15px; */
-	background-color:<?= $show->bgcolor() ?>;
+	background-color:<?= $thisPage->bgcolor() ?>;
 	
 /* 	HEY YOU YOU HEY YOU */	
 /* 	HEY YOU YOU HEY YOU */
@@ -56,13 +59,13 @@
 
 </head>
  
-<body bgcolor="<?= $show->bgcolor() ?>" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+<body bgcolor="<?= $thisPage->bgcolor() ?>" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
 
 <!-- WRAP EVERYTHING -->
-<table width="100% "bgcolor="<?= $show->bgcolor() ?>">
+<table width="100% "bgcolor="<?= $thisPage->bgcolor() ?>">
 
 <!-- HEADER -->
-<table class="head-wrap" bgcolor="<?= $show->bgcolor() ?>">
+<table class="head-wrap" bgcolor="<?= $thisPage->bgcolor() ?>">
 	<tr>
 		<td></td>
 		<td class="header container" align="">
@@ -71,7 +74,7 @@
 			<div class="content">
 				<table>
 					<tr>
-						<td width="45%"><a href="http://panel.la"><img id="identity" width="100%" src="http://panel.la/p/panel_w.png?v=<?php random_int(0,10000) ?>" /></a></td>
+						<td width="45%"><a href="http://panel.la"><img id="identity" width="100%" src="http://panel.la/p/panel_w.png?v=" /></a></td>
 						<td align="right"><div class="collapse">
 							
 							<small>
@@ -87,10 +90,10 @@
 </table><!-- /HEADER -->
 
 <!-- BODY -->
-<table class="body-wrap" bgcolor="<?= $show->bgcolor() ?>">
+<table class="body-wrap" bgcolor="<?= $thisPage->bgcolor() ?>">
 	<tr>
 		<td></td>
-		<td class="container" align="" bgcolor="<?= $show->bgcolor() ?>">
+		<td class="container" align="" bgcolor="<?= $thisPage->bgcolor() ?>">
 			
 			<!-- content -->
 			<div class="content">
@@ -100,7 +103,7 @@
 						<!-- MAIN IMAGE -->	
 						<?php
 						// Get Cover Image
-						$image = $show->cover_image()->toFile();
+						$image = $thisPage->cover_image()->toFile();
 						
 						// always check if the image exists!
 						if($image):
@@ -115,8 +118,8 @@
 							
 							<br>
 							
-							<h1 class="title"><?= $show->artists()->html() ?> <br>
-								<?= $show->title()->html() ?><br>
+							<h1 class="title"><?= $thisPage->artists()->html() ?> <br>
+								<?= $thisPage->title()->html() ?><br>
 								<?php echo date('F j', $startDate) ?>–<?php echo date('F j', $endDate) ?>
 								</h1>
 							
@@ -128,7 +131,7 @@
 							<br>
 						
 						<!-- SHOW DESCRIPTION -->	
-							<?= $show->description()->kirbytext() ?>
+							<?= $thisPage->description()->kirbytext() ?>
 
 
 					
@@ -145,18 +148,18 @@
 			
 <!-- content -->
 			<div class="content">
-				<table bgcolor="<?= $show->bgcolor() ?>">
+				<table bgcolor="<?= $thisPage->bgcolor() ?>">
 					<tr>
 						<td>
 							
 							<!-- social & contact -->
-							<table bgcolor="<?= $show->bgcolor() ?>" class="social" width="100%">
+							<table bgcolor="<?= $thisPage->bgcolor() ?>" class="social" width="100%">
 								<tr>
 									<td>
 										
 										<!--- column 1 -->
 										<div class="column">
-											<table bgcolor="<?= $show->bgcolor() ?>" cellpadding="" align="left">
+											<table bgcolor="<?= $thisPage->bgcolor() ?>" cellpadding="" align="left">
 										<tr>
 											<td>				
 												
@@ -172,7 +175,7 @@
 										
 										<!--- column 2 -->
 										<div class="column">
-											<table bgcolor="<?= $show->bgcolor() ?>" cellpadding="" align="left">
+											<table bgcolor="<?= $thisPage->bgcolor() ?>" cellpadding="" align="left">
 										<tr>
 											<td align="right">				
 												
