@@ -53,8 +53,8 @@ Documentation:
 
 - accidentally-on-purpose_01.jpg
 - accidentally-on-purpose_03.jpg
-- accidentally-on-purpose_02.jpg
 - accidentally-on-purpose_04.jpg
+- accidentally-on-purpose_02.jpg
 - accidentally-on-purpose_05.jpg
 - accidentally-on-purpose_06.jpg
 - accidentally-on-purpose_07.jpg

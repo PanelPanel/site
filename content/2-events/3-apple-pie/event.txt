@@ -1,0 +1,45 @@
+Bgcolor: 
+
+----
+
+Type: screening
+
+----
+
+Title: Apple Pie
+
+----
+
+Showtitle: true
+
+----
+
+Participants: 
+
+- 
+  name: Sam Hamilton
+
+----
+
+Opendate: 2017-04-27 20:00:00
+
+----
+
+Coverimage: ii_156f24244ead85d1.jpg
+
+----
+
+Description: 
+
+APPLE PIE   Sam Hamilton, 2016  Duration: 80 min
+Apple Pie is a new feature length experimental film by artist Sam Hamilton (Aotearoa New Zealand / US). Featuring Samoan dancer Loane Papali'i and a cast of 25 others. Apple Pie was shot and produced on super 16mm film over three years in Aotearoa New Zealand, Samoa and at an astrophysics observatory atop a remote mountaintop in eastern Oregon.
+
+Apple Pie is organized around ten semi-autonomous, yet systemically correlative lines of inquiry - or chapters - designed as a relational architecture to inhabit rather than a script to follow. Each chapter takes a conceptual departure from objects within our solar system, creating a cinematic ecology to playfully yet critically explore the ontological fabric of who – and how - we are in relation to the world/s we inhabit. Apple Pie weaves together strategies of structuralist film with psychedelic optic experience with a constellation of new materialist and situationist meditations, sub-atomic choreographies, cognitive meta-objects and deconstructions of political meridians in relationship to “being”.
+
+----
+
+Bio: 
+
+----
+
+Description2: 
