@@ -10,7 +10,6 @@ $getRandom = str::quickRandom(5);
 ?>
 
   <header class="header-main" style="background-color:<?php echo $getColor; ?>;" role="banner">
-    <div class="grid">
 
       <div class="branding column">
         <a href="<?= url() ?>" rel="home"><img src="<?php echo thumb($myimage, array('width' => 600))->url() .'?'. $getRandom; ?>"/></a>
@@ -18,5 +17,7 @@ $getRandom = str::quickRandom(5);
 
       <?php snippet('menu') ?>
 
-    </div>
+    
+    <?php snippet('_notifications') ?>
+
   </header>

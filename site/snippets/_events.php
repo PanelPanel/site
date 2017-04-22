@@ -100,6 +100,8 @@
 				<?php endforeach ?>
 			
 			</div>
+      	
+      	<hr>
       		
         </div>
 

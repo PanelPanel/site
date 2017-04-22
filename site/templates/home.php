@@ -16,7 +16,7 @@
   </section>
       
   <section id="exhibitions" class="exhibitions column">
-      <?php snippet('header') ?>
+	  <?php snippet('header') ?>
       <?php snippet('_exhibitions') ?>
       	      
    </section>

@@ -1,4 +1,4 @@
-title: Article
+title: Notifications
 
 pages: false
 
@@ -6,15 +6,10 @@ fields:
   title:
     label: Title
     type:  title
-    
-  coverimage:
-    label: Cover Image
-    type: image
-    width: 1/2
-    
-  date:
+        
+  enddate:
     icon: calendar
-    label: Date
+    label: Display Until
     type: date
     format: LL
     placeholder: Select a date…
@@ -25,3 +20,9 @@ fields:
   text:
     label: Text
     type: textarea
+    validate: 
+      maxLength: 75
+
+  relatedPage:
+    label: Link to
+    type: page

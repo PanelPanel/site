@@ -1,0 +1,22 @@
+title: Notifications
+
+files: false
+
+pages:
+  template: notification
+  sort: flip
+  num: date
+
+options: 
+  template: false
+  status: false
+
+icon: newspaper-o
+
+fields:
+
+  info:
+    label: Notifications
+    type: info
+    text: >
+      Notifications get displayed on the home page. 
