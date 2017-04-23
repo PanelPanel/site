@@ -1,9 +1,13 @@
-title: Notifications
+title: Front
 
 files: false
 
+options: 
+  template: false
+  status: false
+
 pages:
-  template: notification
+  template: scrollers
   sort: flip
   num: enddate
 
@@ -16,7 +20,7 @@ icon: newspaper-o
 fields:
 
   info:
-    label: Notifications
+    label: Fronts
     type: info
     text: >
-      Notifications get displayed on the home page. 
+      These get displayed before the home page. 

@@ -521,9 +521,17 @@ body {
 /* -----  3.4 Main Content  ------------------------------------------------- */
 
 .main {
-  padding-top: 3rem;
+  padding-top: calc(100vh - 280px);
   padding-bottom: 1.5rem;
 }
+
+@media (max-width: 850px) {
+      .main {
+	      padding-top: calc(100vh - 200px);
+	      }
+}
+
+section {background-color: white;}
 
 /* =====  4 Template-specific Components ==================================== */
 
@@ -562,6 +570,16 @@ body {
     background-color: transparent;
     padding: 0;
     color: black;
+	
+}
+
+/* -----  FRONT  ----------------------------------------------------- */
+
+.front {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: -999;
 	
 }
 
@@ -631,5 +649,7 @@ a:hover .notification {
 
 //Lighbox
 @import "simpleLightbox";
+
 @import "grid";
 @import "button";
+@import "scrollers";

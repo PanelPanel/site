@@ -6,10 +6,6 @@ Enddate:
 
 ----
 
-Columns: 
-
-----
-
 Column1: 
 
 (image: snake-charming-1.jpg)

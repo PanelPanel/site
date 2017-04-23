@@ -1,0 +1,98 @@
+// CSS for scrolling front page
+
+.fixed {
+	overflow: hidden;
+	position: relative;
+	}
+
+.intro-scroll {
+		font-family: "Times New Roman";
+		font-size: 0.8rem;
+		letter-spacing: 1px;
+		background-color: white;
+		position:absolute;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		z-index:-9999;
+		
+	}
+	
+.intro-scroll a {text-decoration:none;}
+
+
+.larger {
+		font-size: 30px;
+}
+
+div#intro-scroll {
+		position:absolute;
+	    -webkit-animation-name: move;
+    	-webkit-animation-duration: 50s;
+    	-webkit-animation-iteration-count: infinite;
+    	-webkit-animation-timing-function: linear;
+	}
+
+div#intro-scroll2 {
+		position:absolute;
+	    -webkit-animation-name: move;
+    	-webkit-animation-duration: 30s;
+    	-webkit-animation-iteration-count: infinite;
+    	-webkit-animation-timing-function: linear;
+	}
+	
+.intro-scroll img {
+
+display:block;
+margin: 0 auto;
+padding: 30px 0px;
+width: 60%;
+
+}	
+
+div#intro-scroll3 {
+		position:absolute;
+	    -webkit-animation-name: move;
+    	-webkit-animation-duration: 100s;
+    	-webkit-animation-iteration-count: infinite;
+    	-webkit-animation-timing-function: linear;
+	}
+
+    
+/*
+    #intro-scroll:hover, #intro-scroll2:hover, #intro-scroll3:hover {
+    	-webkit-animation-play-state: paused;
+    	
+    }
+    
+*/
+    @-webkit-keyframes move {
+    	0% {
+    		margin-top: calc(100vh - 280px);
+    	}
+    	100% {
+    		margin-top: -300vh;
+    	}
+    }
+    
+    @media (max-width: 850px) {
+        @-webkit-keyframes move {
+    	0% {
+    		margin-top: calc(100vh - 280px);
+    	}
+    	100% {
+    		margin-top: -200vh;
+    	}
+    }
+	}
+    
+    .blink {
+  animation: blinker 1s cubic-bezier(1.0,0,0,1.0) infinite;
+
+}
+
+@keyframes blinker {  
+  0% { opacity: 0; }
+  100% {opacity: 1;}
+}
+    

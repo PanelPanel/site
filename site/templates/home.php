@@ -1,5 +1,6 @@
 <?php snippet('head') ?>
 
+<?php snippet('_front') ?>
   <main class="main" role="main">
 <div class="row">
   

@@ -1,0 +1,30 @@
+title: Scollers
+
+pages: false
+
+fields: 
+  title:
+    label: Title
+    type: title
+  
+  enddate:
+    icon: calendar
+    label: 'Display Until'
+    type: date
+    format: LL
+    placeholder: Select a date…
+    
+  column1:
+    label: 'Column 1'
+    type: textarea
+    width: 1/3
+
+  column2:
+    label: 'Column 2'
+    type: textarea
+    width: 1/3
+    
+  column3:
+    label: 'Column 3'
+    type: textarea  
+    width: 1/3
