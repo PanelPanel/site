@@ -21,7 +21,7 @@ input[type='submit']{
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: nowrap;
-	}
+	
 
 	&:focus,
 	&:hover{
@@ -74,3 +74,6 @@ input[type='submit']{
 			&:focus,
 			&:hover{
 				color: $color-primary;}
+				
+				
+				}

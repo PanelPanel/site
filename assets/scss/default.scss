@@ -126,6 +126,7 @@ p, ul, ol, figure, pre {
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
   font-weight: normal; //no weighted fonts
+  
 }
 
 h1 {
@@ -507,27 +508,19 @@ body {
   animation: pulsing-heart .6s linear infinite;
 }
 
-@media all and (min-width: 48em) {
-  .footer-copyright, .footer-madewithkirby {
-    display: inline;
-  }
-  .footer-copyright::after {
-    content: "—";
-    margin: 0 .2em;
-    color: $color-secondary;
-  }
-}
+
 
 /* -----  3.4 Main Content  ------------------------------------------------- */
 
 .main {
-  padding-top: calc(100vh - 280px);
-  padding-bottom: 1.5rem;
+  margin-top: calc(100vh - 280px);
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 34px 60px 60px rgba(1, 1, 1, .25);
 }
 
 @media (max-width: 850px) {
       .main {
-	      padding-top: calc(100vh - 200px);
+	      margin-top: calc(100vh - 200px);
 	      }
 }
 
@@ -577,13 +570,17 @@ section {background-color: white;}
 
 .front {
 	position: fixed;
+	top: 0px;
+	left: 0px;
 	width: 100vw;
 	height: 100vh;
-	z-index: -999;
+	z-index: -9999;
 	
 }
 
+
 /* -----  NOTIFICATIONS  ----------------------------------------------------- */
+
 
 $circle-size: 175px;
 
@@ -602,10 +599,6 @@ $circle-size: 175px;
 	padding: 0px 5px;
 }
 
-a:hover .notification {
-	
-	box-shadow: 10px 10px 10px rgba(1, 1, 1, 0.25);
-}
 
 .notification div
 {
@@ -628,8 +621,8 @@ a:hover .notification {
 	width:$circle-size;
     height:$circle-size;
     line-height:$circle-size; //set to height of circle to middle align text
-    	right: 3vw;
-	top: 3vw;
+	right: 13vw;
+	top: 6.5vw
 	  }
 	  
 		.notification div
@@ -647,9 +640,11 @@ a:hover .notification {
   
 }
 
+
 //Lighbox
 @import "simpleLightbox";
 
 @import "grid";
 @import "button";
 @import "scrollers";
+

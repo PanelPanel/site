@@ -9,6 +9,7 @@
 		font-family: "Times New Roman";
 		font-size: 0.8rem;
 		letter-spacing: 1px;
+		line-height: 1.4;
 		background-color: white;
 		position:absolute;
 		width: 100vw;
@@ -25,8 +26,7 @@
 	
 .intro-scroll a {
 	text-decoration:none;
-	border-bottom: 1px solid black;
-	padding-bottom: 2px;
+	font-style: italic;
 				
 }
 
@@ -69,13 +69,13 @@ div#intro-scroll3 {
 	}
 
     
-/*
+
     #intro-scroll:hover, #intro-scroll2:hover, #intro-scroll3:hover {
-    	-webkit-animation-play-state: paused;
-    	
+    	//-webkit-animation-play-state: paused;
+    	z-index: -999;
     }
     
-*/
+
     @-webkit-keyframes move {
     	0% {
     		transform: translateY(calc(100vh - 280px));
