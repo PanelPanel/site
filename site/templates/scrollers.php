@@ -16,7 +16,6 @@
 
 <body>
 	<div class="row free-width intro-scroll">
-			<div class="one columns"></div>
             <div class="column fixed">
             	<div id="intro-scroll" class="larger">
 					<?= $item->column1()->kirbytext() ?>
