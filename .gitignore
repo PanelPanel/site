@@ -28,3 +28,6 @@ Icon
 
 /assets/avatars/*
 !/assets/avatars/index.html
+
+# Site Config
+/site/config/config.php
