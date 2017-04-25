@@ -1,4 +1,4 @@
-Bgcolor: 
+Bgcolor: #ed3523
 
 ----
 
