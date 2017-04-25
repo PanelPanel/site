@@ -1,14 +1,17 @@
 <?php
+	
+	//email for event to be streamlined
+	// TODO here and email template put conditionals if content is entered in the email page
+	
 	$thisPage = $page->parent();
 	
-	$startDate = strtotime($thisPage->start_date());
-	$endDate = strtotime($thisPage->end_date());
-	$openDate = strtotime($thisPage->open_date()); 
+
+	$openDate = strtotime($thisPage->opendate()); 
 	
 	$getRandom = str::quickRandom(7);
 
 	//get identity images
-	$myimage = new Asset('p/panel.png?' . $getRandom );
+	$myimage = new Asset('p/panel_w.png?' . $getRandom );
 	
 ?>
 
@@ -20,20 +23,11 @@
 <meta name="viewport" content="width=device-width" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Daniel Long </title>
+<title></title>
 	
 <?php echo css('assets/css/email.css') ?>
-
 <style>
 	
-	h2, h2 i, h2 sup {
-		font-family: 'Arial Narrow','Futura-CondensedMedium', Helvetica, sans-serif; 
-		letter-spacing: 0.4px;
-		color: rgb(35, 34, 35);
-		font-size: 40px;
-		line-height: 1.3;
-		
-		}
 	
 	h1.title {
 		line-height: 1.25;
@@ -105,7 +99,7 @@
 						<!-- MAIN IMAGE -->	
 						<?php
 						// Get Cover Image
-						$image = $thisPage->cover_image()->toFile();
+						$image = page()->coverimage()->toFile();
 						
 						// always check if the image exists!
 						if($image):
@@ -117,23 +111,18 @@
 						<?php endif ?>
         
 						<!-- SHOW TITLE -->	
+							<h1 class="title"><?= page()->title()->html() ?> 
+						
 							
-							<br>
-							
-							<h1 class="title"><?= $thisPage->artists()->html() ?> <br>
-								<?= $thisPage->title()->html() ?><br>
-								<?php echo date('F j', $startDate) ?>–<?php echo date('F j', $endDate) ?>
-								</h1>
 							
 						<!-- SHOW DATES -->		
-							<h4>Opening <?php echo date('l', $openDate) ?>	 
-							<br><?php echo date('M j, ga', $openDate) ?>	
+							<h4><?php echo date('l', $openDate) ?> <?php echo date('F j, ga', $openDate) ?>	
 							</h4>
 
 							<br>
 						
 						<!-- SHOW DESCRIPTION -->	
-							<?= $thisPage->description()->kirbytext() ?>
+							<?= page()->text()->kirbytext() ?>
 
 
 					

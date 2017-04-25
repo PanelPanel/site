@@ -7,7 +7,8 @@ files:
       label: Caption
       type: textarea
 
-pages: false
+pages:
+  template: event-email
 
 fields:
 

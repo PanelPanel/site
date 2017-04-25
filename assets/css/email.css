@@ -38,7 +38,12 @@ hr {
 /* ------------------------------------- 
 		ELEMENTS 
 ------------------------------------- */
-a { color: black;}
+a { color: black;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+}
+
+a.logo {border:none;}
 
 .btn {
 	text-decoration:none;
